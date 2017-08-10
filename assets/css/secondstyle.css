@@ -1,0 +1,82 @@
+@media screen and (max-width: 640px) {
+	.carousel-jumbotron{
+		height: 425px;
+
+	}
+
+	.buttons-box{
+	  position: relative;
+	  left: 0px;
+	  top: 85px;
+	}
+
+	.carousel-caption{
+	  position: relative;
+	  top: 0px;
+	  left: 50px !important;
+	}
+
+	.about-text{
+	  position: relative;
+	  left: 47px;
+	  width: 95% !important;
+	  height: 58%;
+	  font-family: 'Quicksand', sans-serif;
+	  color: #161616;
+	  text-align: left !important;
+	}
+
+	.carousel-indicators{
+	  margin-bottom: 0px;
+	}
+
+	.fitness-jumbotron{
+	  height: 320px;
+	  background-repeat: repeat;
+	}
+
+	.fitness-box{
+	  position: relative;
+	    left: 0px;
+	    top: 0px;
+	}
+
+	.filler-jumbotron{
+	  height: 100px;
+	  background-repeat: repeat;
+	}
+
+	/*Second Filler Jumbotron*/
+	.second-filler-jumbotron{
+	  height: 100px;
+	  background-repeat: repeat;
+	}
+
+	.eateries-jumbotron{
+	  height: 320px;
+	  background-repeat: repeat;
+	}
+
+	.eateries-box{
+	  position: relative;
+	    left: 0px;
+	    top: 0px;
+	}
+
+	/*Events Jumbotron*/
+	.events-jumbotron{
+	  height: 320px;
+	  background-repeat: repeat;
+	}
+
+
+	.events-box{
+	  position: relative;
+	    left: 0px;
+	    top: 0px;
+	}
+
+	footer{
+		display: none !important;
+	}
+}

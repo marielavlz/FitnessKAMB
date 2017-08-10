@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+	<meta charset="UTF-8">
+   	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Fitness KAMB</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/secondstyle.css">
+ 	<link rel="icon" type="image/png" href="assets/images/fitnesskamb.png"/>
+ 	<link rel="SHORTCUT ICON" href="assets/images/fitnesskamb.png"/>
+ 	<!--Fonts-->
+ 	<link href="https://fonts.googleapis.com/css?family=Forum|Josefin+Sans|Nixie+One|Poiret+One|Proza+Libre|Questrial|Quicksand" rel="stylesheet">
+ 	<!--JQuery Library-->
+ 	<script src="http://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+ 	<!--Bootstrap CSS-->
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ 	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 	<!--Moment JS file-->
+ 	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+ 	<!--Firebase-->
+	<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+
+</head>
+
+<body>
+<!--Navigation Bar-->
+	<nav class="navbar navbar-inverse">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="index.html">
+	      	<img class="logo" src="assets/images/fitnesskamb2.png">
+	      </a>
+	   </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="navbar-collapse">
+	      <ul class="nav navbar-nav">
+	      	<li><a href="index.html">Home</a></li>
+	        <li><a href="fitnesspage.html">Fitness Centres</a></li>
+	        <li><a href="EateriesPage.html">Healthy Eats</a></li>
+	        <li><a href="upcomingeventspage.html">Upcoming Events</a></li>
+	        <li><a href="Resources.html">Resources</a></li>
+	        <li><a href="#signup-contact-target">Contact</a></li>
+	      </ul>
+	      	<form class="navbar-form navbar-right">
+			  <div class="form-group">
+			    <label class="sr-only" for="inputSearch"></label>
+			    <input type="email" class="form-control" id="inputSearch" placeholder="Search">
+			  </div>
+			  <button type="submit" class="btn btn-primary" id="buttonSearch"><i class="fa fa-search" aria-hidden="true"></i></button>
+			  <button type="submit" class="btn btn-primary" id="buttonLogin" data-toggle="modal" data-delay = "50" data-target="#LoginModal">Log in<i class="fa fa-sign-in" aria-hidden="true" style="margin-left: 5px"></i></button>
+			 <a href="profilepage.html"><i class="fa fa-user-circle " id="userIcon" data-toggle="tooltip" 
+			 data-placement="bottom" aria-hidden="true" style="margin-left: 5px" title="User Profile" ></i>
+			 </a> 
+			</form>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav> <!--End Nav-->
+
+<!--About Jumbotron-->
+	<div class="jumbotron carousel-jumbotron">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+				<li data-target="#myCarousel" data-slide-to="3"></li>
+			</ol>
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+				<!--Item 1-->
+				<div class="item active">
+					<div class="carousel-caption">
+					<!-- Division for text area -->
+						<div class="about-text">
+							<h1>Begin the Journey to a Healthier You</h1>
+							<h3>Fitness KAMB provides a digital resource to create or maintain an optimal quality of life. Whether you are new to the area or looking to begin the path to a healthier lifestyle, Fitness KAMB allows you to meet your fitness aspirations and goals. </h3>
+						</div><!--End About Text-->
+						<div class="buttons-box">
+							<button type="button" class="btn btn-primary btn-lg calcGoals" data-toggle="modal" data-delay = "50" data-target="#myCalcModal">
+								Generate Goals
+								<i class="fa fa-random" aria-hidden="true" style="margin-left: 5px"></i>
+							</button>
+							<button type="button" class="btn btn-primary btn-lg createAccountButton" data-toggle="modal" data-delay = "50" data-target="#myRegistrationModal">
+								Create an Account
+								<i class="fa fa-user-circle-o" aria-hidden="true" style="margin-left: 5px"></i>
+							</button>
+						</div> <!--End Buttons Box end-->
+					</div> <!--closing caption-->
+					<img class="img-responsive" src="assets/images/womanstretchingbeach.jpg" alt="stretching no the beach" style="width: 100%;">
+				</div>  <!--closing div for active items-->
+
+				<!--Item 2-->	      
+				<div class="item">
+					<div class="carousel-caption item-caption">
+						<!-- Division for text area -->
+						<div class="about-text item-text">
+							<h1>Get In Shape</h1>
+							<h3>Round is a lovely shape, and if you're feeling like trying out a new one, you can search for the right gym to best serve your fitness goals. Find the best exercise routine for you and get started!</h3>
+						</div><!--About Text End-->
+						<div class="buttons-box">
+							<button type="button" class="btn btn-primary btn-lg calcGoals" data-toggle="modal" data-delay = "50" data-target="#myCalcModal">
+								Generate Goals
+								<i class="fa fa-random" aria-hidden="true" style="margin-left: 5px"></i>
+							</button>
+								<button type="button" class="btn btn-primary btn-lg createAccountButton" data-toggle="modal" data-delay = "50" data-target="#myRegistrationModal">
+								Create an Account
+								<i class="fa fa-user-circle-o" aria-hidden="true" style="margin-left: 5px"></i>
+							</button>
+						</div><!--End Buttons Box end-->
+					</div> <!--closing caption-->
+					<img class="img-responsive" src="assets/images/womansitting.jpg" alt="woman preparing for exercise" style="width: 100%;">
+				</div> <!--closing Item-->
+
+				<!--Item 3-->    
+				<div class="item">
+					<div class="carousel-caption item-caption">
+						<!-- Division for text area -->
+						<div class="about-text item-text">
+							<h1>Treat Yourself</h1>
+							<h3>Find restaurants near you that fit your dietary needs. Whether on a first date, out with friends, or Sunday brunch, we make it easy to find the perfect food spot for a healthy lifestyle. </h3>
+						</div> <!--End About Text-->
+						<div class="buttons-box">
+							<button type="button" class="btn btn-primary btn-lg calcGoals" data-toggle="modal" data-delay = "50" data-target="#myCalcModal">
+								Generate Goals
+								<i class="fa fa-random" aria-hidden="true" style="margin-left: 5px"></i>
+							</button>
+							<button type="button" class="btn btn-primary btn-lg createAccountButton" data-toggle="modal" data-delay = "50" data-target="#myRegistrationModal">
+								Create an Account
+								<i class="fa fa-user-circle-o" aria-hidden="true" style="margin-left: 5px"></i>
+							</button>
+						</div> <!--End Buttons Box end-->
+					</div> <!--closing caption-->
+					<img class="img-responsive" src="assets/images/obnoxiousrichpeople.jpg" alt="people having lunch" style="width: 100%;">
+				</div> <!--Closing Item-->
+
+				<!--Item 4-->
+				<div class="item">
+					<div class="carousel-caption item-caption">
+						<!-- Division for text area -->
+						<div class="about-text item-text">
+							<h1>Build a Community</h1>
+							<h3>You don't have to do it alone! Find others with similar fitness interest and goals as you and work towards them together. Search for events in your area and start forming constructive and supportive relationships to best reach your aspirations.</h3>
+						</div> <!--End About Text-->
+						<div class="buttons-box">
+							<button type="button" class="btn btn-primary btn-lg calcGoals" data-toggle="modal" data-delay = "50" data-target="#myCalcModal">
+								Generate Goals
+								<i class="fa fa-random" aria-hidden="true" style="margin-left: 5px"></i>
+							</button>
+							<button type="button" class="btn btn-primary btn-lg createAccountButton" data-toggle="modal" data-delay = "50" data-target="#myRegistrationModal">
+								Create an Account
+								<i class="fa fa-user-circle-o" aria-hidden="true" style="margin-left: 5px"></i>
+							</button>
+						</div><!--End Buttons Box end-->
+					</div> <!--closing caption-->
+					<img class="img-responsive" src="assets/images/workingtogether.jpg" alt="people working out together" style="width: 100%;">
+				</div> <!--End Item-->
+
+				<!-- Left and right controls -->
+				<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#myCarousel" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div> <!--End Carousel Inner-->
+		</div> <!--End Carousel-->
+	</div> <!--End Jumbotron-->
+
+<!--Weight Loss Calculator Modal-->
+<div class="modal fade" id="myCalcModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="color: #fff">
+                    ×</button>
+                <h4 class="modal-title" id="myRegistrationModalLabel">
+                    Get Started With Your Goals!</h4>
+            </div>
+            <div class="modal-body calc-body">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#calcCalories" data-toggle="tab">Calculate Calories</a></li>
+                    <li><a href="#calcWeight" data-toggle="tab">Calculate Ideal Weight</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="calcCalories">
+                    	<center><iframe src="https://www.mealpro.net/calorie/?color=232323" frameborder="0" width="750" height="800" style="max-width: 100%"></iframe></center>
+                    </div>
+                    <div class="tab-pane" id="calcWeight">
+                    	<div class="omni-calculator" data-calculator="fitness/ideal-weight" data-width="750" data-config='{"BMI_min":{"unitDefault":"lb"},"BMI_max":{"unitDefault":"lb"},"Robinson_men":{"unitDefault":"lb"},"Miller_men":{"unitDefault":"lb"},"Devine_men":{"unitDefault":"lb"},"Hamwi_men":{"unitDefault":"lb"},"Robinson_women":{"unitDefault":"lb"},"Miller_women":{"unitDefault":"lb"},"Devine_women":{"unitDefault":"lb"},"Hamwi_women":{"unitDefault":"lb"},"height":{"unitDefault":"in"}}' data-currency="USD" data-show-row-controls="false">
+						  <div class="omni-calculator-header">Ideal Weight Calculator</div>
+						  <div class="omni-calculator-footer">
+						    <a href="https://www.omnicalculator.com/fitness/ideal-weight">Ideal Weight Calculator</a> by <a class="omni-calculator-img-link" href="https://www.omnicalculator.com">Omni</a>
+						  </div>
+						</div>
+						<script async src="https://cdn.omnicalculator.com/sdk.js"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Registration modal -->
+<div class="modal fade" id="myRegistrationModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="color: #fff">
+                    ×</button>
+                <h4 class="modal-title" id="myRegistrationModalLabel">
+                    REGISTRATION</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row reg-body">
+                    <div class="col-md-8" style="border-right: 1px dotted #C2C2C2;padding-right: 30px;">
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="Registration">
+                                <form role="form" class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="inputUsername" class="col-sm-2 control-label">
+                                        Username</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control inputUsername" placeholder="Username"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputAccountEmail" class="col-sm-2 control-label">
+                                        Email</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control inputAccountEmail" placeholder="Email" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputAccountPassword" class="col-sm-2 control-label">
+                                        Password</label>
+                                    <div class="col-sm-10">
+                                        <input type="password" class="form-control inputAccountPassword" placeholder="Password" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputConfirmAccountPassword" class="col-sm-2 control-label">
+                                        Confirm Password</label>
+                                    <div class="col-sm-10">
+                                        <input type="password" class="form-control inputConfirmAccountPassword" placeholder="Password"/>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <button type="button" class="btn btn-primary btn-sm" id="saveReg" data-dismiss="modal">
+                                            Save & Continue</button>
+                                        <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">
+                                            Cancel</button>
+                                    </div>
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="hidden-xs OR">
+                            OR</div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row text-center sign-with">
+                            <div class="col-md-12">
+                                <button class="modal-btn loginBtn loginBtn--google">Login with Google</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!--End Row-->
+            </div> <!--End Modal Body-->
+        </div><!--End Modal Content-->
+    </div> <!--End Modal Dialogue-->
+</div> <!--End Modal-->
+
+<!-- Login modal -->
+<div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="myLoginModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    ×</button>
+                <h4 class="modal-title" id="myModalloginLabel">
+                    LOGIN OR REGISTRATION </a></h4>
+            </div>
+            <div class="modal-body modal-body-login">
+                <div class="row">
+                    <div class="col-md-8" style="border-right: 1px dotted #C2C2C2;padding-right: 30px;">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#Login" data-toggle="tab">Login</a></li>
+                            <li><a href="#Registration1" data-toggle="tab">Registration</a></li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="Login">
+                                <form role="form" class="form-horizontal login-body">
+                                <div class="form-group">
+                                    <label for="email" class="col-sm-2 control-label">
+                                        Email</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control" id="email1" placeholder="Email" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1" class="col-sm-2 control-label">
+                                        Password</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Password" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <button type="submit" class="btn btn-primary btn-sm">
+                                            Submit</button>
+                                        <a href="javascript:;">Forgot your password?</a>
+                                    </div>
+                                </div>
+                                </form>
+                            </div>
+                            <!-- Registration form -->
+                            <div class="tab-pane" id="Registration1">
+								<form role="form" class="form-horizontal registration-body">
+	                                <div class="form-group">
+	                                    <label for="email" class="col-sm-2 control-label">
+	                                        Username</label>
+	                                    <div class="col-sm-10">
+	                                        <input type="text" class="form-control" placeholder="Username"/>
+	                                    </div>
+	                                </div>
+	                                <div class="form-group">
+	                                    <label for="email" class="col-sm-2 control-label">
+	                                        Email</label>
+	                                    <div class="col-sm-10">
+	                                        <input type="email" class="form-control" id="email" placeholder="Email" />
+	                                    </div>
+	                                </div>
+	                                <div class="form-group">
+	                                    <label for="password" class="col-sm-2 control-label">
+	                                        Password</label>
+	                                    <div class="col-sm-10">
+	                                        <input type="password" class="form-control" id="password" placeholder="Password" />
+	                                    </div>
+	                                </div>
+	                                <div class="form-group">
+	                                    <label for="password" class="col-sm-2 control-label">
+	                                        Confirm Password</label>
+	                                    <div class="col-sm-10">
+	                                        <input type="password" class="form-control" id="password" placeholder="Password" />
+	                                    </div>
+	                                </div>
+	                                <div class="row">
+	                                    <div class="col-sm-2">
+	                                    </div>
+	                                    <div class="col-sm-10">
+	                                        <button type="button" class="btn btn-primary btn-sm" id="saveReg">
+	                                            Save & Continue</button>
+	                                        <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">
+	                                            Cancel</button>
+	                                    </div>
+	                                </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="hidden-xs OR">
+                            OR</div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row text-center sign-with">
+                           <!--  <div class="col-md-12">
+                                <h3>
+                                    Sign in with</h3>
+                            </div> -->
+                            <div class="col-md-12">
+                                <div class="btn-group btn-group-justified">
+                                    <button class="modal-btn loginBtn loginBtn--google">Login with Google</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Webpage Body-->
+	<div class="body-webpage">
+
+		<section class="fitness-section">
+			<div class="jumbotron fitness-jumbotron">
+				<div class="container">
+					<aside class="fitness-box">
+						<p class="fitness-text">
+						The journey of a thousand miles begins with a single step. Get started with a treadmill by finding a gym near you.
+						</p>
+						<a href="fitnesspage.html" type="button" class="btn btn-primary btn-lg searchFit"><span class="glyphicon glyphicon-search" aria-hidden="true" style="margin-right: 10px"></span>Search for Fitness Centers</a>
+					</aside>
+				</div>
+			</div>
+		</section> <!--End Fitness Section-->
+
+		<section class="filler-section">
+			<div class="jumbotron filler-jumbotron">
+				<div class="container">
+					<p class="empty-containter">
+					</p>
+				</div>
+			</div>
+		</section> <!--End filler section-->
+
+		<section class="eateries-section">
+			<div class="jumbotron eateries-jumbotron">
+				<div class="container">
+					<aside class="eateries-box">
+						<p class="eateries-text">
+							Want to spend a night out with friends? There are plenty of healthy options for all tastes. Don't forget to add some kale.
+						</p>
+						<a href="EateriesPage.html" type="button" class="btn btn-primary btn-lg searchFit"><span class="glyphicon glyphicon-search" aria-hidden="true" style="margin-right: 10px"></span>Search for Resturants</a>
+					</aside>
+				</div>
+			</div>
+		</section> <!--End restaurant section-->
+
+		<section class="second-filler-section">
+			<div class="jumbotron second-filler-jumbotron">
+				<div class="container">
+					<div class="textbox" style="background: rgba(0,0,0,.6);">
+						<p>
+							Why Fitness KAMB?
+						</p>
+
+						<p>Regardless of age or background, health and fitness are facets of one's well being that are undeniably fundamental to achieving and maintaining an optimal quality of life. Our team has created this digital resource with a dedicated focus on health and fitness interests through a convergence of currently available resources with the objective of enhancing a user's personal health and fitness aspirations and goals.</p>
+					</div>
+				</div>
+			</div>
+		</section> <!--End second filler section-->
+
+		<section class="events-section">
+			<div class="jumbotron events-jumbotron">
+				<div class="container">
+					<aside class="events-box">
+						<p class="events-text">
+							You aren't alone! Receiving and providing support is as important to your health as diet and exercise! Now go have some fun!
+						</p>
+						<a href="upcomingeventspage.html" type="button" class="btn btn-primary btn-lg searchEvents"><span class="glyphicon glyphicon-search" aria-hidden="true" style="margin-right: 10px"></span>Search for Upcoming Events</a>
+					</aside>
+				</div>
+			</div>
+		</section> <!--End Upcoming Events Section-->
+
+		<a name="signup-contact-target">
+		<section class="signup-contact-section" id="sign-up-contact">
+			<div class="container">
+				<div class="row">
+					<!--Contact Div-->
+					<div class="col-md-6 contact-signup contact">
+						<h3 class="contact-text"><span class="glyphicon glyphicon-envelope" style="margin-right: 15px" aria-hidden="true"></span>Contact Us</h3>
+						<form> <!--Start Contact Form-->
+						  <div class="form-group">
+						   	 <label for="inputName">Name</label>
+						     <input type="text" class="form-control" id="inputName" placeholder="Name">
+						  </div>
+						  <div class="form-group">
+						     <label for="inputContactEmail">Email</label>
+						   	 <input type="text" class="form-control" id="inputContactEmail" placeholder="example@email.com">
+						  </div>
+						  <div class="form-group">
+						     <label for="inputSubject">Subject</label>
+						   	 <input type="text" class="form-control" id="inputSubject" placeholder="Subject">
+						  </div>
+						  <div class="form-group">
+						  		<label>Message</label>
+						  		<textarea class="form-control" rows="3"></textarea>
+						  </div>
+						  <button type="submit" class="btn btn-primary contact-btn">Send<i class="fa fa-paper-plane" aria-hidden="true" style="margin-left: 10px"></i></button>
+						</form> <!--End Contact Form-->
+					</div>
+					<!--Sign Up Div-->
+					<div class="col-md-6 contact-signup signup">
+						<h3 class="signup-text"><span class="glyphicon glyphicon-user" style="margin-right: 15px" aria-hidden="true"></span>Sign Up Today!</h3>
+						<form>
+
+						  <div class="form-group">
+						   	<label for="inputUsername">Username</label>
+						    <input type="text" class="form-control inputUsername" placeholder="Username">
+						  </div>
+
+						  <div class="form-group">
+						     <label for="inputAccountEmail">Email</label>
+						   	 <input type="email" class="form-control inputAccountEmail" placeholder="example@email.com">
+						  </div>
+
+						  <div class="form-group">
+						     <label for="inputAccountPassword">Password</label>
+						   	 <input type="password" class="form-control inputAccountPassword" placeholder="password">
+						  </div>
+
+						  <div class="form-group">
+						     <label for="inputConfirmAccountPassword">Confirm Password</label>
+						   	 <input type="password" class="form-control inputConfirmAccountPassword" placeholder="password">
+						  </div>
+
+						  <div class="form-group">
+						    <div class="col-sm-offset-2 col-sm-10">
+							    <button type="submit" class="btn btn-primary create-account sign-up-btn"><i class="fa fa-sign-in" aria-hidden="true" style="margin-right: 10px"></i>Sign Up Now</button>
+							    <button class="loginBtn loginBtn--google">Login with Google</button>
+						    </div>
+						  </div>
+						</form> <!--End Sign Up Form-->
+					</div> <!--End signup col -->
+				</div> <!--End Row-->
+			</div> <!--End Containter-->
+		</section></a> <!--End sign up and contact form-->
+	</div> <!--End Body Webpage-->
+
+
+<!--Footer-->
+	<footer>
+		<div>
+			<p class="footer-text"> Copyright &#169; 2017 Bonnie Hoffman, Kriti Tiwari, Ashwini Todkar, Mariela Velez</p>
+		</div>
+	</footer>
+
+	<script src="assets/javascript/script.js"></script>
+</body>
+
+</html>

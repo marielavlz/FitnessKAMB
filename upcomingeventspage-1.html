@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Fitness KAMB</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="icon" type="image/png" href="assets/images/fitnesskamb.png"/>
+	<link rel="SHORTCUT ICON" href="assets/images/fitnesskamb.png"/>
+	<!--Fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Forum|Josefin+Sans|Nixie+One|Poiret+One|Proza+Libre|Questrial|Quicksand" rel="stylesheet">
+	<!--Bootstrap CSS-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<!--JQuery Library-->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!--Moment JS file-->
+	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+	<!--Firebase-->
+	<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+</head>
+
+<body>
+<!--Navigation Bar-->
+	<nav class="navbar navbar-inverse">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="index.html">
+	      	<img class="logo" src="assets/images/fitnesskamb2.png">
+	      </a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="navbar-collapse">
+	      <ul class="nav navbar-nav">
+	      	<li><a href="index.html">Home</a></li>
+	        <li><a href="fitnesspage.html">Fitness Centres</a></li>
+	        <li><a href="EateriesPage.html">Healthy Eats</a></li>
+	        <li><a href="upcomingeventspage.html">Upcoming Events</a></li>
+	        <li><a href="Resources.html">Resources</a></li>
+	        <li><a href="index.html#sign-up-contact">Contact</a></li>
+	      </ul>
+	      	<form class="navbar-form navbar-right">
+			  <div class="form-group">
+			    <label class="sr-only" for="inputSearch"></label>
+			    <input type="email" class="form-control" id="inputSearch" placeholder="Search">
+			  </div>
+			  <button type="submit" class="btn btn-primary" id="buttonSearch"><i class="fa fa-search" aria-hidden="true"></i></button>
+			  <button type="submit" class="btn btn-primary" id="buttonLogin">Log in<i class="fa fa-sign-in" aria-hidden="true" style="margin-left: 5px"></i></button>
+			  <i class="fa fa-user-circle " id="userIcon" data-toggle="tooltip" 
+			 data-placement="bottom" aria-hidden="true" style="margin-left: 5px" title="User Profile" ></i>
+			</form>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav> <!--End Nav-->
+
+	<div class="jumbotron events-jumbotron-page">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-7 search-events">
+					<aside class="gyms-text">
+						<h2>Keep it Social Without the Media</h2>
+						<p>Find events in your area and socialise with other people who have similar interests while improving your wellness.</p>
+					</aside>
+					<form class="form-inline search-gyms-box">
+						<div class="form-group address-box">
+							<label for="inputAddressEvents" style="margin-bottom: 20px; color: #6b6a67;">ENTER YOUR ADDRESS</label>
+							<br>
+							<input type="text" class="form-control" id="inputAddressEvents" placeholder="City, State, or Zip Code">
+						</div>
+						<button type="submit" class="btn btn-primary" id="searchGym"><i class="fa fa-search" aria-hidden="true" style="margin-right: 5px"></i>Find Events</button>
+					</form>
+				</div> <!--End First Col-->
+				<div class="col-md-5 events-image-col">
+					<div class="events-widget">
+						<script type="text/javascript" src="http://widgets.active.com/widgets/nearyou/widget-a3.min.js"></script>
+						<script type="text/javascript">
+						  new ActiveNetwork.NearYouWidget({"title":"Things to do Near You","num":"8","keywords":"","activity":"any","showActivitySelector":true,"type":"all","location":"","showLocationSelector":true,"affiliate":"","placement":"","campaign":"150457","width":410,"height":383,"style":{"frame":{"background-color":"rgba(0,0,0,0.2)"},"title":{"color":"#ffffff"},"window":{"background-color":"rgba(0,0,0,0.5)"},"text":{"color":"#fff","border-color":"#5b5c5c"},"links":{"color":"#d8e1e6"},"buttons":{"background-color":"#6b6a67"},"tags":{"background-color":"#eeeeee"}}}).render();
+						</script>
+					</div><!--End Events Widget-->
+				</div><!--End Second Col-->
+			</div><!--End Row-->
+		</div><!--End Container-->
+	</div><!--End Jumbotron-->
+
+	<section class="events-filler-section">
+		<div class="jumbotron events-filler">
+			<div class="container">
+				<p class="events-empty-containter">
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<div class="jumbotron space-jumbotron events-top-space">
+		<div class="container">
+			<h2>LOCATIONS</h2>
+		</div>
+	</div>
+
+	<div class="container-fluid map-fluid">
+		<div class="row map-row">
+			<div class="col-md-12 map-container" id="eventMapContainer">
+				<div id="map"></div>
+
+			    <div id="form">
+			    	
+			    	<h1>Add an event...</h1>
+			    	
+			    	<div class="fieldset">
+				    	<label for="title">Title: </label><br>
+				    	<input type="text" class="title" name="title">
+			    	</div>
+
+			    	<div class="fieldset">
+				    	<label for="event-type">Event Type: </label><br>
+				    	<select class="event-type" name="event-type">
+				    		<option value="meeting">Yoga Meetup</option>
+				    		<option value="action">Fun run</option>
+				    		<option value="appearance">Charity Walk</option>
+				    	</select>
+			    	</div>
+
+			    	<div class="fieldset">
+				    	<label for="date">Date: </label><br>
+				    	<input type="date" class="date" name="date">
+			    	</div>
+
+			    	<div class="fieldset">
+				    	<label for="time">Time: </label><br>
+				    	<input type="time" class="time" name="time">
+			    	</div>
+
+			    	<div class="fieldset">
+				    	<label for="address">Address: </label><br>
+				    	<textarea type="text" class="address" name="address"></textarea>
+			    	</div>
+
+			    	<div class="fieldset">
+				    	<label for="description">Description: </label><br>
+				    	<textarea type="text" class="description" name="description"></textarea>
+			    	</div>
+
+			    	<div class="fieldset">
+				    	<button class="submit">ADD EVENT</button>
+			    	</div>
+			    </div>
+
+   			</div>
+
+		</div>
+	</div>
+	<script type="text/javascript" src="assets/javascript/vendor/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/vendor/underscore.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/vendor/backbone.min.js"></script>
+
+    <script type="text/javascript" src="assets/javascript/events.js"></script>
+    <script type="text/javascript" src="assets/javascript/main.js"></script>
+
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEYkzEir7zBfdKJiCF0sVKJnc24BJxYs4&callback=app.init">
+    </script>
+
+    <script type="text/template" id="infowindow-template">
+
+    	<div class="info">
+    		<h4 class="title"><%= title %></h4>
+    		<h4 class="event-type"><%= eventType %></h4>
+    		<p><span class="time"><%= time %></span>, <span class="date"><%= date %></span></p>
+    		<p class="address"><%= address %></p>
+    		<p class="description"><%= description %></p>
+    	</div>
+
+    </script>
+
+<!--Footer-->
+	<footer>
+		<div>
+			<p class="footer-text"> Copyright &#169; 2017 Bonnie Hoffman, Kriti Tiwari, Ashwini Todkar, Mariela Velez</p>
+		</div>
+	</footer>
+
+	<script src="assets/javascript/script.js"></script>
+</body>
+
+</html>

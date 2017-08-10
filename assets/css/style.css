@@ -1,0 +1,1017 @@
+/*Nav Bar*/
+.navbar{
+  height: 70px;
+}
+
+.container-fluid{
+  position: relative;
+  top: 8px;
+}
+
+/*.checkbox{
+  color: #fff !important;
+  margin-left: 6px;
+}*/
+
+.form-group{
+  margin-left: 3px !important;
+  position: relative;
+  top: -4px;
+}
+
+.navbar-form{
+  position: relative;
+  left: -5px;
+}
+
+/*.login-form{
+  position: relative;
+    top: -5px !important;
+  width: 480px !important;
+  padding: 0 !important;
+}*/
+.fa-user-circle:before {
+    /*content: "\f2bd";*/
+    font-size: 30px ! important;
+    color: white ! important;
+  }
+  
+.logo{
+  position: relative;
+  top: -47px;
+  height: 113px;
+}
+/*All Buttons*/
+.btn{
+  margin-left: 6px;
+  background-color: rgba(0,0,0,.7) !important;
+  border: none !important;
+  padding: 12px !important;
+  font-family: 'Quicksand', sans-serif !important;
+}
+
+.btn:hover{
+  background-color: rgba(0,0,0,.8) !important;
+}
+
+.btn:focus{
+  background-color: rgba(0,0,0,.9) !important;
+}
+
+#inputSearch{
+  height: 41px;
+}
+
+#buttonSearch{
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  padding-top: 11px !important;
+  padding-bottom: 10px !important;
+  margin-left: -4px;
+  position: relative;
+  top: -4px;
+  background-color: rgba(105,105,105, .7) !important;
+}
+
+#buttonSearch:hover{
+  background-color: rgba(105,105,105, .8) !important;
+}
+
+#buttonSearch:focus{
+  background-color: rgba(105,105,105, .9) !important;
+}
+
+#buttonLogin{
+  padding-left: 18px !important;
+  padding-right: 18px !important;
+  position: relative;
+  top: -4px;
+  background-color: rgba(105,105,105, .7) !important;
+}
+
+#buttonLogin:hover{
+  background-color: rgba(105,105,105, .8) !important;
+}
+
+#buttonLogin:focus{
+  background-color: rgba(105,105,105, .9) !important;
+}
+.buttonDiet{
+  width: 120px;
+  height: 120px;
+      white-space: normal ! important;
+
+  /*color: yellow;*/
+}
+
+/*About Jumbotron*/
+
+/*.about-jumbotron{
+  height: 910px;
+  background-image: url(../images/womanstretchingbeach.jpg) !important; 
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  top: -20px;
+}*/
+.carousel-jumbotron{
+  position: relative;
+    top: -20px;
+  height: 876px;
+  margin-bottom: 30px;
+  padding-top: 0px !important;
+  padding-bottom : 0px !important;
+}
+/*.carousel{
+    position: relative;
+    top: -26px;
+    margin-bottom: -26px;
+}*/
+
+.buttons-box{
+  position: relative;
+  left: -185px;
+  top: 100px;
+}
+
+.carousel-caption{
+  position: relative;
+  top: 34px;
+  left: 68px !important;
+}
+
+.about-text{
+  position: relative;
+  left: 47px;
+  width: 61% !important;
+  font-family: 'Quicksand', sans-serif;
+  color: #161616;
+  text-align: left !important;
+
+}
+
+.carousel-indicators{
+  margin-bottom: 75px;
+}
+
+/*Modal*/
+
+.modal{
+  font-family: 'Quicksand', sans-serif;
+}
+
+.modal-btn{
+  position: relative;
+    top: 71px;
+}
+
+.OR {
+    height: 30px;
+    width: 30px;
+    border: 1px solid #C2C2C2;
+    border-radius: 50%;
+    font-weight: bold;
+    line-height: 28px;
+    text-align: center;
+    font-size: 12px;
+    float: right;
+    position: absolute;
+    right: -16px;
+    top: 40%;
+    z-index: 1;
+    background: #DFDFDF;
+}
+
+.modal-dialog{
+  position: relative;
+    top: 57px;
+}
+
+.modal-header{
+  background-color: #353638 !important;
+  color: #fff;
+}
+
+.modal-body{
+  height: 340px;
+}
+
+.calc-body{
+  height: 910px;
+}
+
+.omni-calculator{
+  position: relative !important;
+  left: 60px !important;
+}
+
+.omni-calculator-header{
+  background-color: #232323 !important;
+  color: #fff !important;
+  font-family: 'Quicksand', sans-serif !important;
+}
+
+.reg-body{
+  position: relative;
+  top: 30px;
+}
+
+/*Login Button pop-up*/
+.modal-body-login{
+  height: 340px;
+  /*position: relative;*/
+}
+.registration-body{
+  position: relative ! important;
+  top: 15px ! important;
+}
+.login-body{
+   position: relative ! important;
+  top: 40px ! important;
+}
+.nav-tabs{
+    margin-bottom: 15px;
+}
+.sign-with{
+    margin-top: 25px;
+    padding: 20px;
+}
+
+/*Fitness Jumbotron*/
+
+.fitness-jumbotron{
+  height: 600px;
+    position: relative;
+    top: -50px;
+  background-image: url(../images/fitnessarmsandabs.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.fitness-box{
+  background-color: rgba(0,0,0,0.4);
+  text-align: center;
+  color: #fff;
+  padding: 30px;
+  float: right;
+  position: relative;
+    left: 12%;
+    top: 245px;
+  border-radius: 10px;
+}
+
+.searchFit{
+  margin-top: 15px;
+}
+
+/*Fitness Page Jumbotron*/
+.fitnesspage-jumbotron{
+  position: relative;
+    top: -20px;
+  height: 570px;
+  background-image: url(../images/rippedlady.jpg) !important;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/*Resturant page Jumbotron*/
+.resturantPage-jumbotron{
+   position: relative;
+  top: -20px;
+  height: 570px;
+  background-image: url(../images/dinnerparty.jpg) !important;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.space-jumbotron{
+  background-color: #353638 !important;
+  margin-top: 40px;
+  font-family: 'Nixie One', sans-serif;
+  color: #fff !important;
+  text-align: center;
+  height: 100px !important;
+  padding-top: 15px !important;
+}
+
+.top-space{
+  position: relative !important;
+    top: -60px !important;
+}
+
+.gyms-text{
+  font-family: 'Questrial', sans-serif;
+  position: relative;
+  left: -30px;
+}
+
+/*text for Resturant page*/
+.resturant-text{
+  font-family: 'Questrial', sans-serif;
+  position: relative;
+  left: -30px;
+
+}
+#searchGym{
+  margin-top: 38px;
+  padding: 29px 28px 30px 28px !important;
+  position: relative;
+    top: 1px;
+    left: -5px;
+  font-size: 15px;
+}
+
+.jumbotron-division{
+  /*border-style: solid;  */
+  /*border-width: 2px;*/
+  /*border-color: yellow;*/
+  position: relative;
+  top: -30px;
+}
+
+/*for Recource button page*/
+.row{
+  padding: 1px;
+}
+
+.columnSize{
+   width: 21% ! important;
+  
+    /*padding: 1px;*/
+}
+/*@media screen and (min-width:992px)
+{
+.col-md-3 {
+    width: 25%;
+     padding: 0px; 
+    margin-left: 21px !important;
+    position: relative;
+    /*margin-left: 21px;*/
+  
+.buttonClass{
+    float:left;
+    width: 30%;
+    padding-bottom: 30%; /* = width for a 1:1 aspect ratio */
+    margin:1.66%;
+    background-color: #1E1E1E;
+}
+
+.search-gyms{
+  position: relative;
+    left: -35px;
+    top: 7px;
+}
+
+.search-gyms-box{
+  position: relative;
+  top: 80px;
+  /*left: 30px;*/
+  font-family: 'Quicksand', sans-serif;
+  font-size: 19px;
+}
+.search-resturant-box{
+   position: relative;
+  top: 80px;
+  /*left: 30px;*/
+  font-family: 'Quicksand', sans-serif;
+  font-size: 19px;
+}
+
+#inputAddress{
+    width: 370px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 17px;
+}
+
+.gym-image{
+  width: 187%;
+  position: relative;
+    top: -49px;
+    left: -43px;
+}
+.food-image{
+   width: 187%;
+  position: relative;
+    top: -48px;
+    left: -43px;
+}
+/*Fitness Page Bottom Half*/
+
+/*.annimate{
+  position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    left: 0px;
+    top: 20px;
+}*/
+/* Standard syntax */
+/*@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}*/
+a{
+  text-decoration: none !important;
+}
+
+.gym-rec{
+  font-size: 19px !important;
+  font-family: 'Nixie One', sans-serif;
+  color: #fff;
+  margin-bottom: 10px;
+  text-align: center;;
+}
+
+.gym-rec:hover{
+  color: gold;
+}
+
+.mapFitness{
+  height: 500px;
+  margin-bottom: 173px;
+  position: relative;
+    left: 49px;
+  width: 780px;
+  
+}
+
+
+.map-fluid{
+  position: relative;
+  top: 0 !important;
+}
+
+.map-container{
+  height: 650px;
+  width: 900px !important;
+  position: absolute;
+    top: -14px;
+  margin-bottom: 130px
+}
+
+#map {
+ height: 100%;
+ width:100%;
+ position: absolute;
+}
+
+
+.map-fluid{
+  position: relative;
+  top: 0 !important;
+}
+
+
+.map-container-large{
+  height: 660px;
+  position: relative;
+}
+
+.map-container{
+  height: 660px;
+  position: relative;
+  padding: 1px;
+
+}
+/* Adding styling for Map*/
+/* Always set the map height explicitly to define the size of the div
+element that contains the map. */
+/*#map {
+  height: 60%;
+  width:60%;
+  margin-left: 20%;
+  margin-top: 10%;
+  position: absolute;
+}*/
+
+
+
+/*Filler Jumbotron Fitness Page*/
+.fitness-filler{
+  height: 210px;
+  position: relative;
+    top: -50px;
+  background-image: url(../images/weightsfree.jpeg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/*Filler Jumbotron Resturant Page*/
+.resturant-filler{
+  height: 210px;
+  position: relative;
+  top: -50px;
+  background-image: url(../images/food-image.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/*Resources Page*/
+
+.jumbotron-division{
+  /*border-style: solid;  */
+  /*border-width: 2px;*/
+  /*border-color: yellow;*/
+  position: relative;
+  top: -30px;
+}
+
+/* leave this with a defined height so that the map will display */
+./*map-row{
+  height: 600px;
+  padding: 1px;
+} 
+*/
+.columnSize{
+ /* padding-right:0 ! important;
+    padding-left:0 ! important;
+     padding: 0 !important;
+   margin: 0 !important*/
+   width: 21% ! important;
+}
+/*.division1{
+  border-style: solid;
+  border-width: 1px;
+}*/
+
+/*Jumbotron for resource page*/
+
+.resourcespage-jumbotron{
+background-image: url("../images/aerobicspic.jpg");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100%;
+position: relative;
+top: -20px;
+
+
+/* position: relative;
+  top: -20px;
+  height: 970px;
+  background-image: url(../images/aerobicspic.jpg) !important;
+  background-size: 100%;
+  background-repeat: no-repeat;*/
+}
+/*P tag for Resource page*/
+.resourcespagePara{
+  position: relative;
+    left: -20px;
+  color: #fff;
+  font-family: 'Nixie One', sans-serif;
+}
+
+.resourcespagePara2{
+  position: relative;
+    left: 60px;
+  color: #fff;
+  font-family: 'Nixie One', sans-serif;
+}
+.searchEat{
+  margin-top: 15px;
+}
+/*Ketogenic,Raw Food,South Beach,Natural Awakeing,Women's Health, Weight Watcher,
+The good life,Interval training*/
+#h4text{
+      position: relative;
+    left: 2px;
+    top: 19px;
+    font-size: 15px;
+    float: left;
+}
+/*For Atkiens,Zone,Vegan,Spry living,Walking*/
+#h4textBig{
+  position: relative;
+    left: 13px;
+    top: 19px;
+    font-size: 15px;
+    float: left;
+}
+/*For Shape Text,Squats,Lounge*/
+#h4textBig1{
+  position: relative;
+    left: 21px;
+    top: 19px;
+    font-size: 15px;
+    float: left;
+}
+/*For the Yoga text*/
+#h4textBig2{
+  position: relative;
+    left: 27px;
+    top: 19px;
+    font-size: 15px;
+    float: left;
+}
+.buttonClass{
+    float:left;
+    width: 30%;
+    padding-bottom: 30%; /* = width for a 1:1 aspect ratio */
+    margin:1.66%;
+    background-color: #1E1E1E;
+}
+
+
+/*Filler Jumbotron*/
+.filler-jumbotron{
+  position: relative;
+    top: -80px;
+  height: 220px;
+  background-image: url(../images/weights.jpeg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/*Restaurant Jumbotron*/
+.eateries-jumbotron{
+  height: 600px;
+  position: relative;
+    top: -110px;
+  background-image: url(../images/meals.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.eateries-box{
+  background-color: rgba(0,0,0,0.5);
+  text-align: center;
+  color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  float: left;
+  position: relative;
+    left: -12%;
+    top: 235px;
+}
+
+.textbox{
+  padding: 40px;
+  border-radius: 10px;
+  position: relative;
+  top: 25px;
+  color: #fff !important;
+}
+
+/*Second Filler Jumbotron*/
+.second-filler-jumbotron{
+  position: relative;
+    top: -140px;
+  height: 420px;
+  background-image: url(../images/proteinshake.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/*Events Jumbotron*/
+.events-jumbotron{
+  height: 600px;
+  position: relative;
+    top: -170px;
+  background-image: url(../images/threewomandoingyoga.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#search-filter{
+  height: 220px !important;
+}
+
+#search-widget{
+  position: relative;
+  top: 20px;
+  height: 1100px;
+}
+
+#search-fields{
+  position: relative;
+  left: 264px;
+}
+
+.events-box{
+  background-color: rgba(0,0,0,0.4);
+  text-align: center;
+  color: #fff;
+  padding: 30px;
+  float: right;
+  position: relative;
+    left: 12%;
+    top: 245px;
+  border-radius: 10px;
+}
+
+.events-image-col{
+  position: relative;
+    left: 40px;
+}
+
+.searchEvent{
+  margin-top: 15px;
+}
+
+.an-nyw-control form input.an-nyw-default{
+  width: 78px !important;
+}
+
+/*Upcoming Events Page*/
+.expand a, .collapse a, .user-register-button{
+  background: none !important;
+}
+
+.events-jumbotron-page{
+  position: relative;
+    top: -20px;
+  height: 570px;
+  background-image: url(../images/fitwomenlaughing.jpg) !important;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.events-filler{
+  height: 210px;
+  position: relative;
+    top: -50px;
+  background-image: url(../images/werk.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#inputAddressEvents{
+  width: 370px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 17px;
+}
+
+.search-events{
+  position: relative;
+    left: -35px;
+    top: 7px;
+}
+
+.events-top-space{
+  position: relative;
+  top: -90px;
+}
+
+.an-nyw-footer {
+    background-color: #545456;
+    height: 49px !important;
+    position: relative;
+    margin: 0px;
+}
+
+.an-nyw-go {
+  position: relative !important;
+  top: -5px !important;
+}
+
+/*.events-widget{
+  margin-left: 118px;
+  position: relative;
+    top: -487px;
+}*/
+
+/*.events-image{
+  width: 157.6%;
+  position: relative;
+    top: -49px;
+    left: -43px;
+}*/
+
+/*Contact and Sign Up Page Section*/
+
+.signup-contact-section{
+  position: relative;
+  top: -200px;
+  height: 400px;
+  border-top: 80px solid #83dbea;
+  color: #e3ebed;
+}
+
+.contact-signup{
+  margin-top: 30px;
+  width: 550px !important;
+}
+.signup{
+  margin-left: 25px;
+}
+
+.contact{
+  margin-right: 20px;
+}
+
+.signup-text{
+  text-align: center;
+  font-family: 'Nixie One', cursive;
+}
+
+.sign-up-btn{
+  font-size: 16px !important;
+  padding: 6px 18px 7px 18px !important;
+  position: relative;
+  top: -2.5px !important;
+  text-align: center !important;
+}
+
+.contact-text{
+  text-align: center;
+  font-family: 'Nixie One', cursive;
+}
+
+.contact-btn{
+  font-size: 16px !important;
+  padding: 8px 18px 8px 18px !important;
+  text-align: center !important;
+}
+
+.loginBtn {
+  box-sizing: border-box;
+  position: relative;
+  /* width: 13em;  - apply for fixed size */
+  margin: 0.2em;
+  padding: 0px 16px 0px 46px;
+  border: none;
+  text-align: left;
+  line-height: 34px;
+  white-space: nowrap;
+  border-radius: 0.2em;
+  font-size: 16px;
+  color: #FFF;
+}
+
+.loginBtn:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 34px;
+  height: 100%;
+}
+
+.loginBtn:focus {
+  outline: none;
+}
+
+.loginBtn:active {
+  box-shadow: inset 0 0 0 32px rgba(0,0,0,0.1);
+}
+
+.loginBtn--google {
+  /*font-family: "Roboto", Roboto, arial, sans-serif;*/
+  background: #DD4B39;
+}
+
+.loginBtn--google:before {
+  border-right: #BB3F30 1px solid;
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_google.png') 6px 6px no-repeat;
+}
+
+.loginBtn--google:hover,
+.loginBtn--google:focus {
+  background: #E74B37;
+}
+/*profile page*/
+ hr {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    border: 0 !important;
+    border-top: 1px solid #999 !important;
+}
+.jumbotron-profile{
+    position: relative !important;
+    top: -20px !important;
+    background-color:  rgba(255,255,255,.15)!important;
+}
+.container-profile{
+    position: relative !important;
+    top: -30px!important;
+}
+
+.profileHeader{
+  /*background-color: #353638 !important;*/
+  color: #fff;
+}
+.profile-nav-a{
+      color: #080808 ! important;
+}
+.profile-pannel{
+    position: relative ! important;
+    top: -115px ! important;
+    width: 292px ! important;
+}
+/*Body Styling*/
+
+body{
+  background-color: #4a98a5 !important;
+}
+
+/*Sticky Footer*/
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin: 0px 0px 100px; /* bottom = footer height */
+}
+
+/* Adding styling for Map*/
+/* Always set the map height explicitly to define the size of the div
+element that contains the map. */
+/*#map {
+  height: 60%;
+  width:60%;
+  margin-left: 20%;
+  /*margin-top: 10%;*/
+/*}*/
+
+footer{
+  position: absolute;
+    left: 0px;
+    bottom: 0px;
+    height: 110px;
+    width: 100%;
+  background-color: #161616;
+  text-align: center;
+  line-height: 100px;
+  border-top: 7px solid #39707a;
+}
+
+.footer-text{
+  color: lightgray;
+  font-family: Arial;
+  line-height: 101px;
+  margin-bottom: -20px;
+}
+/**/
+/*Ashwini - Added this for Event map styling -- Dont change*/
+/**/
+.map-row{
+  margin: 0px;
+  margin-bottom: 50px;
+  height: 700px;
+  padding: 1px;
+} 
+#form {
+  background-color: rgba(189, 195, 199, 0.7);
+  padding: 10px 25px;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 70px;
+  left: 20px;
+}
+
+
+#form h1 {
+      font-size: 100%;
+      font-weight: 700; 
+      margin-bottom: 3px;    
+}
+
+.fieldset {
+  margin-bottom: 7px;
+}
+
+.fieldset label {
+      line-height: 100%;
+}
+
+.fieldset textarea {
+      min-width: 300px;
+      min-height: 100px;
+}
+
+.fieldset input,
+.fieldset select {
+      font-family: inherit;
+      width: 50%;
+}
+
+.fieldset .submit {
+      background-color: #2ecc71;
+      border: none;
+      color: #FFFFFF;
+      cursor: pointer;
+      display: block;
+      font-size: 80%;
+      margin: auto;
+      padding: 5px 8px;
+}
+
+.fieldset .submit:hover {
+      background-color: #27ae60;
+}
+#eventMapContainer{
+  /*padding: 10%;*/
+  height: 100%;
+  width: 100%;
+  /*margin-left: 5%;*/
+}

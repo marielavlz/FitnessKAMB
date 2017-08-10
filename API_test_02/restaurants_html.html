@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+   <!--  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCEYkzEir7zBfdKJiCF0sVKJnc24BJxYs4"></script> -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCEYkzEir7zBfdKJiCF0sVKJnc24BJxYs4&search?q=vegan+restaurants+in+houston&rlz=1C1CHBD_enUS748US748&oq=vegan+restaurants"></script>
+ 
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 60%;
+        width:60%;
+        margin-left: 20%;
+        margin-top: 10%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body onload="onload()">
+   <h5>Geocode (/geocode)</h5>
+    <p id="geocode_op"></p>
+    <div id="map"></div>
+
+  <script src="testJS.js" type="application/javascript"> </script>  
+  <script type="text/javascript" src="zomato-googleAPI.js"></script>  
+      
+  </body>
+</html>

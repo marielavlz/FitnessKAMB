@@ -1,0 +1,64 @@
+[debug] [2017-08-08T23:59:12.888Z] ----------------------------------------------------------------------
+[debug] [2017-08-08T23:59:12.891Z] Command:      /usr/local/Cellar/node/8.0.0_1/bin/node /usr/local/bin/firebase serve
+[debug] [2017-08-08T23:59:12.892Z] CLI Version:  3.9.1
+[debug] [2017-08-08T23:59:12.892Z] Platform:     darwin
+[debug] [2017-08-08T23:59:12.892Z] Node Version: v8.0.0
+[debug] [2017-08-08T23:59:12.893Z] Time:         Tue Aug 08 2017 18:59:12 GMT-0500 (CDT)
+[debug] [2017-08-08T23:59:12.893Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-08-08T23:59:12.919Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-08-08T23:59:12.919Z] > authorizing via signed-in user
+[debug] [2017-08-08T23:59:12.922Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-08-08T23:59:12.922Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/OKkvRUY0q5XjNvzwPgip6l65GvA3O9vhjNhK5Ljsxv48Y1Q8kZk8X3XLwNAhwTOl',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Tue Aug 08 2017 18:59:12 GMT-0500 (CDT)
+[debug] [2017-08-08T23:59:13.080Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-08T23:59:13.094Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/fitnesskamb-5523a  
+ Tue Aug 08 2017 18:59:13 GMT-0500 (CDT)
+[debug] [2017-08-08T23:59:13.610Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-08T23:59:13.612Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/fitnesskamb-5523a/tokens  
+ Tue Aug 08 2017 18:59:13 GMT-0500 (CDT)
+[debug] [2017-08-08T23:59:14.733Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/Mariela/Documents/Coding_Bootcamp/ProjectOne/Fitness-KAMB'...
+[info] 
+[debug] [2017-08-08T23:59:14.739Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/fitnesskamb-5523a  
+ Tue Aug 08 2017 18:59:14 GMT-0500 (CDT)
+[debug] [2017-08-08T23:59:14.974Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-08T23:59:14.974Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1005316596834/clients/_:getWebAppConfig  
+ Tue Aug 08 2017 18:59:14 GMT-0500 (CDT)
+[debug] [2017-08-08T23:59:15.452Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-08T23:59:15.482Z] TypeError: Cannot read property 'public' of undefined
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2017-08-09T00:10:01.804Z] ----------------------------------------------------------------------
+[debug] [2017-08-09T00:10:01.808Z] Command:      /usr/local/Cellar/node/8.0.0_1/bin/node /usr/local/bin/firebase serve
+[debug] [2017-08-09T00:10:01.808Z] CLI Version:  3.9.1
+[debug] [2017-08-09T00:10:01.808Z] Platform:     darwin
+[debug] [2017-08-09T00:10:01.808Z] Node Version: v8.0.0
+[debug] [2017-08-09T00:10:01.810Z] Time:         Tue Aug 08 2017 19:10:01 GMT-0500 (CDT)
+[debug] [2017-08-09T00:10:01.810Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-08-09T00:10:01.828Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-08-09T00:10:01.828Z] > authorizing via signed-in user
+[debug] [2017-08-09T00:10:01.831Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/fitnesskamb-5523a  
+ Tue Aug 08 2017 19:10:01 GMT-0500 (CDT)
+[debug] [2017-08-09T00:10:02.297Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-09T00:10:02.299Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/fitnesskamb-5523a/tokens  
+ Tue Aug 08 2017 19:10:02 GMT-0500 (CDT)
+[debug] [2017-08-09T00:10:02.730Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/Mariela/Documents/Coding_Bootcamp/ProjectOne/Fitness-KAMB'...
+[info] 
+[debug] [2017-08-09T00:10:02.734Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/fitnesskamb-5523a  
+ Tue Aug 08 2017 19:10:02 GMT-0500 (CDT)
+[debug] [2017-08-09T00:10:02.947Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-09T00:10:02.948Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1005316596834/clients/_:getWebAppConfig  
+ Tue Aug 08 2017 19:10:02 GMT-0500 (CDT)
+[debug] [2017-08-09T00:10:03.193Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: ./
+[info] ✔  hosting: Local server: http://localhost:5000
+

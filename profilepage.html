@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Fitness KAMB</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/secondstyle.css">
+    <link rel="icon" type="image/png" href="assets/images/fitnesskamb.png"/>
+    <link rel="SHORTCUT ICON" href="assets/images/fitnesskamb.png"/>
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Forum|Josefin+Sans|Nixie+One|Poiret+One|Proza+Libre|Questrial|Quicksand" rel="stylesheet">
+    <!--JQuery Library-->
+    <script src="http://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--Moment JS file-->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <!--Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+
+</head>
+
+<body>
+<!--Navigation Bar-->
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <img class="logo" src="assets/images/fitnesskamb2.png">
+          </a>
+       </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fitnesspage.html">Fitness Centres</a></li>
+            <li><a href="EateriesPage.html">Healthy Eats</a></li>
+            <li><a href="upcomingeventspage.html">Upcoming Events</a></li>
+            <li><a href="Resources.html">Resources</a></li>
+            <li><a href="#signup-contact-target">Contact</a></li>
+          </ul>
+            <form class="navbar-form navbar-right">
+              <div class="form-group">
+                <label class="sr-only" for="inputSearch"></label>
+                <input type="email" class="form-control" id="inputSearch" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-primary" id="buttonSearch"><i class="fa fa-search" aria-hidden="true"></i></button>
+              <button type="submit" class="btn btn-primary" id="buttonLogin" data-toggle="modal" data-delay = "50" data-target="#LoginModal">Log in<i class="fa fa-sign-in" aria-hidden="true" style="margin-left: 5px"></i></button>
+             <a href="profilepage.html"><i class="fa fa-user-circle " id="userIcon" data-toggle="tooltip" 
+             data-placement="bottom" aria-hidden="true" style="margin-left: 5px" title="User Profile" ></i>
+             </a> 
+            </form>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav> <!--End Nav-->
+
+<!-- Login modal -->
+<div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="myLoginModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    ×</button>
+                <h4 class="modal-title" id="myModalloginLabel">
+                    LOGIN OR REGISTRATION </a></h4>
+            </div>
+            <div class="modal-body modal-body-login">
+                <div class="row">
+                    <div class="col-md-8" style="border-right: 1px dotted #C2C2C2;padding-right: 30px;">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#Login" data-toggle="tab">Login</a></li>
+                            <li><a href="#Registration1" data-toggle="tab">Registration</a></li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="Login">
+                                <form role="form" class="form-horizontal login-body">
+                                <div class="form-group">
+                                    <label for="email" class="col-sm-2 control-label">
+                                        Email</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control" id="email1" placeholder="Email" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1" class="col-sm-2 control-label">
+                                        Password</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Password" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <button type="submit" class="btn btn-primary btn-sm">
+                                            Submit</button>
+                                        <a href="javascript:;">Forgot your password?</a>
+                                    </div>
+                                </div>
+                                </form>
+                            </div>
+                            <!-- Registration form -->
+                            <div class="tab-pane" id="Registration1">
+                                <form role="form" class="form-horizontal registration-body">
+                                    <div class="form-group">
+                                        <label for="email" class="col-sm-2 control-label">
+                                            Username</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" placeholder="Username"/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email" class="col-sm-2 control-label">
+                                            Email</label>
+                                        <div class="col-sm-10">
+                                            <input type="email" class="form-control" id="email" placeholder="Email" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password" class="col-sm-2 control-label">
+                                            Password</label>
+                                        <div class="col-sm-10">
+                                            <input type="password" class="form-control" id="password" placeholder="Password" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password" class="col-sm-2 control-label">
+                                            Confirm Password</label>
+                                        <div class="col-sm-10">
+                                            <input type="password" class="form-control" id="password" placeholder="Password" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-2">
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <button type="button" class="btn btn-primary btn-sm" id="saveReg">
+                                                Save & Continue</button>
+                                            <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">
+                                                Cancel</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="hidden-xs OR">
+                            OR</div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row text-center sign-with">
+                           <!--  <div class="col-md-12">
+                                <h3>
+                                    Sign in with</h3>
+                            </div> -->
+                            <div class="col-md-12">
+                                <div class="btn-group btn-group-justified">
+                                    <button class="modal-btn loginBtn loginBtn--google">Login with Google</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="http://platform.fatsecret.com/js?key=1e661e8499a84155b4d8692453acb811"></script>
+
+
+
+
+<!-- web page content -->
+<!-- division for jumbotron -->
+<div class="jumbotron jumbotron-profile">
+<!-- division for contaier -->
+    <div class="container container-profile">
+    <h2 class="profileHeader">User Profile</h2>
+    <hr>
+
+<!-- Row start --> 
+    <div class="row">
+      <!-- left column -->
+      <div class="col-md-3">
+        <div class="text-center">
+          <!-- <img src="//placehold.it/100" class=" img-circle" alt="avatar"> -->
+           <img src="http://placehold.it/150x150" alt="Placeholder" class="img-circle">
+          <h6>Upload a different photo...</h6>
+          <input type="file" class="form-control">
+        </div> <!--close text centre-->
+      </div> <!-- close col-md-3-->
+
+
+
+
+     <div class="col-md-9">
+        <ul class="nav nav-tabs ">
+        <li class="active"><a class="profile-nav-a" data-toggle="tab" href="#home">Personal Details</a></li>
+        <li><a class="profile-nav-a"  data-toggle="tab" href="#menu1">Contact Information </a></li>
+        </ul>
+<!-- for 1st tab -->
+    <div class="tab-content">
+         <div id="home" class="tab-pane fade in active">
+            <h3></h3>
+            <form role="form" class="form-horizontal">
+                               
+                                <div class="form-group">
+                                <!-- Label for first name -->
+                                <label for="firstname" class="col-sm-2 control-label ">
+                                        First Name</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control " id="fname-input"  placeholder="firstname" />
+                                    </div>
+                                    <div class="row"></div>
+                                    <div class="row"></div>
+                                    <!-- Label for last name -->
+                                    <label for="lastname" class="col-sm-2 control-label">
+                                        Last Name</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="lname-input"  placeholder="lastname" />
+                                    </div>
+                                    <div class="row"></div>
+                                    <div class="row"></div>
+                                    <!-- Label for Date of Birth -->
+                                    <label for="date" class="col-sm-2 control-label">
+                                        Age</label>
+                                    <div class="col-sm-2">
+                                        <input type="number" class="form-control " id="age-input"  placeholder="Age" />
+                                    </div>
+                                    <div class="row"></div>
+                                    <div class="row"></div>
+                                    <!-- Label for sex -->
+                                    <label for="sex" class="col-sm-2 control-label">Sex</label>
+                                    <div class="col-sm-8">
+                                      <input type="radio" name="gender" value="male" checked id="male-input"> Male
+                                      <input type="radio" name="gender" value="female" id="female-input"> Female
+                                      <input type="radio" name="gender" value="other" id="other-input"> Other
+                                    </div>
+                                    <div class="row"></div>
+                                    <div class="row"></div>
+                                    <!-- Label fro weight -->
+                                    <label for="Pounds" class="col-sm-2 control-label">
+                                        Weight</label>
+                                    <div class="col-sm-2">
+                                        <input type="number" class="form-control" id="weight-input" placeholder="Pounds" />
+                                    </div>
+                                    <div class="row"></div>
+                                    <div class="row"></div>
+                                    <!-- Label fro Height -->
+                                    <label for="CM" class="col-sm-2 control-label">
+                                        Height</label>
+                                    <div class="col-sm-2">
+                                        <input type="number" class="form-control " id="height-input" placeholder="Cm"/>
+                                    </div>
+                                    <div class="row"></div>
+                                    <div class="row"></div>
+                                   
+                                </div>
+                             <!-- Row for Button save and Cancel -->
+                                 <div class="row">
+                                    <div class="col-sm-2">
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <button type="button" class="btn btn-primary btn-sm" id="saveProfile">
+                                            Save & Continue</button>
+                                        <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">
+                                            Cancel</button>
+                                    </div>
+                                </div>
+                                </form>
+            
+        </div>
+        <!-- for 2nd tab  Conatct Information -->
+        <div id="menu1" class="tab-pane fade">
+        <h3></h3>
+          <form role="form" class="form-horizontal">
+                                <div class="form-group">
+                                <!-- Label for username -->
+                                    <label for="email" class="col-sm-2 control-label">
+                                        Username</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control usernameProfile" placeholder="Username"/>
+                                    </div>
+                                </div>
+                                <!-- Label for EmailId -->
+                                <div class="form-group">
+                                    <label for="email" class="col-sm-2 control-label">
+                                        Email</label>
+                                    <div class="col-sm-8">
+                                        <input type="email" class="form-control emailProfile" id="email" placeholder="Email" />
+                                    </div>
+                                </div>
+                                <!-- Label for Password -->
+                                <div class="form-group">
+                                    <label for="password" class="col-sm-2 control-label">
+                                        Password</label>
+                                    <div class="col-sm-8">
+                                        <input type="password" class="form-control passwordProfile" id="password" placeholder="Password" />
+                                    </div>
+                                </div>
+                                <!-- Label for Confirm password -->
+                                <div class="form-group">
+                                    <label for="password" class="col-sm-2 control-label">
+                                        Confirm Password</label>
+                                    <div class="col-sm-8">
+                                        <input type="password" class="form-control confrimPasswordProfile" id="password" placeholder="Password" />
+                                    </div>
+                                </div>
+                                 <div class="row">
+                                    <div class="col-sm-2">
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <button type="button" class="btn btn-primary btn-sm" id="saveProfile">
+                                            Save & Continue</button>
+                                        <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">
+                                            Cancel</button>
+                                    </div>
+                                </div>
+                                </form>
+        </div> <!-- form tab-pane close-->
+    </div> <!-- division tab content -->
+
+</div> <!-- div col-md-9 close -->
+
+         <div class="col-lg-6 profile-pannel">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">About you</h3>
+            </div>
+            <div class="panel-body" id="recent-member">
+              <h2 id="fname-input-display"></h2>
+                       <h2 id="lname-input-display"></h2>
+                       <h2 id="age-input-display"></h2>
+                       <h2 id="sex-input-display"></h2>
+                       <h2 id="weight-input-display"></h2>
+                       <h2 id="height-input-display"></h2>
+            </div>
+          </div>
+        </div>
+
+</div> <!-- row close -->
+            
+<hr>
+    </div> <!-- jumbotron close -->
+    </div>  <!-- conatainerclose -->
+
+<!--Footer-->
+    <footer>
+        <div>
+            <p class="footer-text"> Copyright &#169; 2017 Bonnie Hoffman, Kriti Tiwari, Ashwini Todkar, Mariela Velez</p>
+        </div>
+    </footer>
+    
+    <script src="assets/javascript/script.js"></script>
+    
+
+</body>
+
+</html>
