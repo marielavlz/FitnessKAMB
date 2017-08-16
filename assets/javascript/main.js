@@ -92,7 +92,7 @@ app.Models.Pin = Backbone.Model.extend({
 
 		var eventType = this.get( 'eventType' );
 
-		var baseUrl = 'https://maps.google.com/mapfiles/ms/micons/';
+		var baseUrl = '';
 		var iconUrl;
 		var icon;
 		
@@ -118,6 +118,7 @@ app.Models.Pin = Backbone.Model.extend({
 		iconUrl = baseUrl + icon;
 
 		this.set( 'iconUrl', iconUrl );
+		
 
 	}
 	
